@@ -1,0 +1,9 @@
+Device: cuda
+Wrong predictions analyzed: 200
+
+Attention diagnosis counts:
+attention_diagnosis
+likely_background_shortcut     103
+focuses_on_figure_but_wrong     51
+mixed_attention                 44
+likely_border_shortcut           2

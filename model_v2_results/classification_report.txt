@@ -1,0 +1,50 @@
+V2 Results (with TTA)
+Accuracy: 0.6958
+Top-3 Accuracy: 0.8796
+Top-5 Accuracy: 0.9411
+Macro F1: 0.5827
+Weighted F1: 0.6939
+Macro Precision: 0.5437
+Macro Recall: 0.6767
+
+                        precision    recall  f1-score   support
+
+             Adventure       0.44      0.89      0.59        19
+     Castle & Medieval       0.81      0.84      0.82        85
+ Collectible & Special       0.82      0.31      0.45       191
+                Disney       0.62      0.67      0.64        55
+ Education & Technical       0.56      0.74      0.64        19
+               Fantasy       0.64      0.83      0.72        52
+     Friends & Fantasy       0.96      0.87      0.91       142
+          Harry Potter       0.77      0.78      0.77        96
+        Jurassic World       0.64      0.76      0.70        21
+      LEGO Promotional       0.37      0.39      0.38       104
+Licensed Entertainment       0.52      0.67      0.58        21
+          Middle-Earth       0.53      0.83      0.64        23
+             Minecraft       1.00      0.95      0.97        38
+            Monkie Kid       0.33      0.67      0.44         3
+               NINJAGO       0.00      0.00      0.00         0
+               Pirates       0.00      0.00      0.00         0
+             Preschool       0.98      0.92      0.95       190
+     Racing & Vehicles       0.68      1.00      0.81        13
+        Space & Sci-Fi       0.73      0.80      0.76        30
+                Sports       0.46      1.00      0.63         6
+          Super Heroes       0.38      0.60      0.46         5
+           Super Mario       0.85      1.00      0.92        35
+         Time Cruisers       0.00      0.00      0.00         0
+        Town - Airport       0.39      0.71      0.50        17
+    Town - Coast Guard       0.38      0.89      0.53         9
+   Town - Construction       0.45      0.94      0.61        16
+    Town - Exploration       0.62      0.82      0.71        22
+           Town - Fire       0.87      0.94      0.91        36
+        Town - General       0.72      0.36      0.49       137
+         Town - Police       0.84      0.75      0.80        65
+         Town - Racing       0.33      0.63      0.44        19
+         Town - Rescue       0.46      0.80      0.59        15
+          Town - Space       0.63      0.75      0.69        16
+                 Train       0.00      0.00      0.00         0
+           Video Games       0.24      0.58      0.34        12
+
+              accuracy                           0.70      1512
+             macro avg       0.54      0.68      0.58      1512
+          weighted avg       0.75      0.70      0.69      1512

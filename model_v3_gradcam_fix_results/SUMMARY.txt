@@ -1,0 +1,11 @@
+Device: cuda
+Fixed model test accuracy: 0.8049
+Fixed model test macro F1: 0.7026
+Wrong predictions analyzed after fix: 200
+
+Attention diagnosis counts:
+attention_diagnosis
+likely_background_shortcut     118
+focuses_on_figure_but_wrong     42
+mixed_attention                 36
+likely_border_shortcut           4

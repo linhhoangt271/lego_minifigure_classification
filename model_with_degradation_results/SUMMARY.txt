@@ -1,0 +1,21 @@
+Device: cuda
+Rows: 37800
+Images: 1512
+Clean accuracy: 0.8062
+Clean macro F1: 0.7182
+All degraded accuracy: 0.7120
+
+Accuracy by degradation:
+degradation
+noise               0.333554
+motion_blur         0.718915
+occlusion           0.729497
+defocus_blur        0.755732
+low_brightness      0.769621
+jpeg_compression    0.773810
+low_contrast        0.781085
+color_cast          0.802028
+clean               0.806217
+
+CSV: /home/test/barco/model_with_degradation_results/degradation_results.csv
+HTML: /home/test/barco/model_with_degradation_results/degradation_summary.html

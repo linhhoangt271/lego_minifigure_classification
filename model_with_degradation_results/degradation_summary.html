@@ -1,0 +1,253 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fixed Model Degradation Benchmark</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;color:#17202a}
+header{padding:28px 36px;border-bottom:1px solid #d7dbdd}main{padding:24px 36px 40px}
+h1{margin:0 0 6px;font-size:24px}.sub{margin:0;color:#5d6d7e}table{border-collapse:collapse;width:100%;margin-top:14px}
+th,td{border-bottom:1px solid #d7dbdd;text-align:left;padding:8px;font-size:14px}th{background:#f4f6f7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:18px 0}.metric{background:#f4f6f7;padding:12px;border-radius:6px}
+img{max-width:100%;border:1px solid #d7dbdd;border-radius:6px}
+</style></head><body>
+<header><h1>Fixed Model Degradation Benchmark</h1><p class="sub">Controlled image-quality stress test after Grad-CAM shortcut analysis and fix.</p></header>
+<main>
+<section class="grid">
+<div class="metric"><b>Rows</b><br>37800</div>
+<div class="metric"><b>Images</b><br>1512</div>
+<div class="metric"><b>Overall accuracy</b><br>0.712</div>
+</section>
+<h2>Most harmful degradation types</h2><ul><li>noise: 0.334 accuracy</li><li>motion_blur: 0.719 accuracy</li><li>occlusion: 0.729 accuracy</li><li>defocus_blur: 0.756 accuracy</li><li>low_brightness: 0.770 accuracy</li></ul>
+<h2>Results by degradation and severity</h2>
+<table><thead><tr><th>Degradation</th><th>Severity</th><th>Accuracy</th><th>Confidence</th><th>Quality score</th><th>N</th></tr></thead><tbody>
+        <tr>
+          <td>clean</td>
+          <td>0</td>
+          <td>0.806</td>
+          <td>0.652</td>
+          <td>0.783</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>color_cast</td>
+          <td>1</td>
+          <td>0.806</td>
+          <td>0.649</td>
+          <td>0.829</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>color_cast</td>
+          <td>2</td>
+          <td>0.812</td>
+          <td>0.649</td>
+          <td>0.826</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>color_cast</td>
+          <td>3</td>
+          <td>0.788</td>
+          <td>0.646</td>
+          <td>0.847</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>defocus_blur</td>
+          <td>1</td>
+          <td>0.802</td>
+          <td>0.642</td>
+          <td>0.736</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>defocus_blur</td>
+          <td>2</td>
+          <td>0.767</td>
+          <td>0.604</td>
+          <td>0.702</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>defocus_blur</td>
+          <td>3</td>
+          <td>0.698</td>
+          <td>0.531</td>
+          <td>0.680</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>jpeg_compression</td>
+          <td>1</td>
+          <td>0.787</td>
+          <td>0.633</td>
+          <td>0.786</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>jpeg_compression</td>
+          <td>2</td>
+          <td>0.780</td>
+          <td>0.621</td>
+          <td>0.786</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>jpeg_compression</td>
+          <td>3</td>
+          <td>0.755</td>
+          <td>0.595</td>
+          <td>0.783</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>low_brightness</td>
+          <td>1</td>
+          <td>0.798</td>
+          <td>0.647</td>
+          <td>0.872</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>low_brightness</td>
+          <td>2</td>
+          <td>0.782</td>
+          <td>0.637</td>
+          <td>0.744</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>low_brightness</td>
+          <td>3</td>
+          <td>0.728</td>
+          <td>0.554</td>
+          <td>0.629</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>low_contrast</td>
+          <td>1</td>
+          <td>0.798</td>
+          <td>0.646</td>
+          <td>0.879</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>low_contrast</td>
+          <td>2</td>
+          <td>0.796</td>
+          <td>0.646</td>
+          <td>0.804</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>low_contrast</td>
+          <td>3</td>
+          <td>0.749</td>
+          <td>0.580</td>
+          <td>0.722</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>motion_blur</td>
+          <td>1</td>
+          <td>0.792</td>
+          <td>0.638</td>
+          <td>0.741</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>motion_blur</td>
+          <td>2</td>
+          <td>0.748</td>
+          <td>0.586</td>
+          <td>0.723</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>motion_blur</td>
+          <td>3</td>
+          <td>0.616</td>
+          <td>0.461</td>
+          <td>0.711</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>noise</td>
+          <td>1</td>
+          <td>0.761</td>
+          <td>0.584</td>
+          <td>0.765</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>noise</td>
+          <td>2</td>
+          <td>0.227</td>
+          <td>0.334</td>
+          <td>0.736</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>noise</td>
+          <td>3</td>
+          <td>0.013</td>
+          <td>0.209</td>
+          <td>0.714</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>occlusion</td>
+          <td>1</td>
+          <td>0.794</td>
+          <td>0.646</td>
+          <td>0.772</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>occlusion</td>
+          <td>2</td>
+          <td>0.743</td>
+          <td>0.613</td>
+          <td>0.742</td>
+          <td>1512</td>
+        </tr>
+        
+        <tr>
+          <td>occlusion</td>
+          <td>3</td>
+          <td>0.651</td>
+          <td>0.506</td>
+          <td>0.697</td>
+          <td>1512</td>
+        </tr>
+        </tbody></table>
+<h2>Plots</h2>
+<div class="grid">
+<div><img src="accuracy_by_degradation.png"><p>Accuracy drop shows performance robustness.</p></div>
+<div><img src="confidence_by_degradation.png"><p>Confidence shows whether the model knows it is uncertain.</p></div>
+<div><img src="quality_vs_correct.png"><p>Quality score vs correctness tests if IQA can predict failures.</p></div>
+</div>
+</main></body></html>
